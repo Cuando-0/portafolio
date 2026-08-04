@@ -6,62 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Proceso de creación Multimedia · SANIROX</title>
     
-    <!-- Fuentes estilo Tech / Moderno -->
+    <!-- Fuentes estilo Tech / Cyberpunk -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     
-    <!-- Enlace a la hoja de estilos externa -->
+    <!-- Hoja de estilos externa -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body id="pageBody">
+
+    <!-- FONDO CYBERPUNK GLOBAL Y LOGO OCUPANDO TODA LA PANTALLA -->
+    <div class="cyber-global-bg" id="cyberGlobalBg">
+        <div class="cyber-space-drift"></div>
+        <div class="cyber-grid-floor"></div>
+        
+        <!-- LOGO GIGANTE QUE OCUPA TODO EL FONDO DE LA PANTALLA -->
+        <div class="global-logo-container" id="globalLogoContainer">
+            <div class="cyber-spotlight"></div>
+            <img src="Archivos/Logo Sakix.png" alt="SANIROX Logo Fondo Pantalla Completa" class="giant-bg-logo">
+        </div>
+
+        <div class="neon-orb orb-lime"></div>
+        <div class="neon-orb orb-magenta"></div>
+        <div class="neon-orb orb-cyan"></div>
+        <div class="scanline-overlay"></div>
+    </div>
+
+    <!-- ENCABEZADO SUPERIOR CON ESTILO CYBERPUNK Y COLORES A JUEGO -->
+    <header class="cyber-header">
+        <div class="header-top-bar"></div> <!-- Línea de acento neón superior -->
+        <div class="header-container">
+            <!-- Espaciador de equilibrio para centrado perfecto -->
+            <div class="header-spacer-left">
+                <span class="cyber-badge-tag">Productor Multimedia</span>
+            </div>
+
+            <!-- TÍTULO SANIROX CENTRADO -->
+            <a href="#investigacion" class="brand-wrapper-inner">
+                <div class="brand-text">
+                    <span class="brand-title" data-text="SANIROX">SANIROX</span>
+                </div>
+            </a>
+            
+            <!-- INDICADOR ONLINE A LA DERECHA CON COLORES NEÓN -->
+            <div class="header-status">
+                <span class="status-pulse"></span>
+                <span class="status-text">SYSTEM ONLINE</span>
+            </div>
+        </div>
+    </header>
 
     <!-- LAYOUT PRINCIPAL -->
-    <div class="three-col-layout">
+    <div class="two-col-layout">
 
-        <!-- COLUMNA IZQUIERDA: Índice Fijo/Responsivo -->
+        <!-- COLUMNA IZQUIERDA: Índice Siempre Visible -->
         <aside class="col-left">
             <div class="col-sticky">
                 <div class="col-heading">
-                    <span class="col-label">Índice</span>
+                    <span class="col-label">SYS_INDEX //</span>
                 </div>
                 <nav class="index-list">
-                    <a href="#investigacion" class="index-item active" data-section="investigacion">
-                        <span class="index-num">01</span> Investigación
+                    <a href="#investigacion" class="index-item active" data-section="investigacion" title="Investigación">
+                        <span class="index-num">01</span> <span class="index-text">Investigación</span>
                     </a>
-                    <a href="#brief" class="index-item" data-section="brief">
-                        <span class="index-num">02</span> Brief
+                    <a href="#brief" class="index-item" data-section="brief" title="Brief">
+                        <span class="index-num">02</span> <span class="index-text">Brief</span>
                     </a>
-                    <a href="#idea" class="index-item" data-section="idea">
-                        <span class="index-num">03</span> Idea
+                    <a href="#idea" class="index-item" data-section="idea" title="Idea">
+                        <span class="index-num">03</span> <span class="index-text">Idea</span>
                     </a>
-                    <a href="#concepto_grafico" class="index-item" data-section="concepto_grafico">
-                        <span class="index-num">04</span> Concepto gráfico
+                    <a href="#concepto_grafico" class="index-item" data-section="concepto_grafico" title="Concepto Gráfico">
+                        <span class="index-num">04</span> <span class="index-text">Concepto gráfico</span>
                     </a>
-                    <a href="#creacion_logo" class="index-item" data-section="creacion_logo">
-                        <span class="index-num">05</span> Creación del Logo
+                    <a href="#creacion_logo" class="index-item" data-section="creacion_logo" title="Creación del Logo">
+                        <span class="index-num">05</span> <span class="index-text">Creación del Logo</span>
                     </a>
-                    <a href="#manual_de_marca" class="index-item" data-section="manual_de_marca">
-                        <span class="index-num">06</span> Manual de marca
+                    <a href="#manual_de_marca" class="index-item" data-section="manual_de_marca" title="Manual de Marca">
+                        <span class="index-num">06</span> <span class="index-text">Manual de marca</span>
                     </a>
-                    <a href="#scketch" class="index-item" data-section="scketch">
-                        <span class="index-num">07</span> Sketch
+                    <a href="#sketch" class="index-item" data-section="sketch" title="Sketch">
+                        <span class="index-num">07</span> <span class="index-text">Sketch</span>
                     </a>
-                    <a href="#wireframes" class="index-item" data-section="wireframes">
-                        <span class="index-num">08</span> Wireframes
+                    <a href="#wireframes" class="index-item" data-section="wireframes" title="Wireframes">
+                        <span class="index-num">08</span> <span class="index-text">Wireframes</span>
                     </a>
-                    <a href="#mockup" class="index-item" data-section="mockup">
-                        <span class="index-num">09</span> Mockup
+                    <a href="#mockup" class="index-item" data-section="mockup" title="Mockup">
+                        <span class="index-num">09</span> <span class="index-text">Mockup</span>
                     </a>
-                    <a href="#WEB" class="index-item" data-section="WEB">
-                        <span class="index-num">10</span> WEB
+                    <a href="#WEB" class="index-item" data-section="WEB" title="Web">
+                        <span class="index-num">10</span> <span class="index-text">WEB</span>
                     </a>
                 </nav>
             </div>
         </aside>
 
-        <!-- COLUMNA CENTRAL: Contenido principal -->
+        <!-- COLUMNA CENTRAL: Contenido del Portafolio -->
         <main class="col-center">
 
             <!-- 01 INVESTIGACIÓN -->
@@ -122,7 +163,7 @@
                     <div class="audio-content">
                         <h3 class="audio-title">Audio Descriptivo</h3>
                         <audio controls>
-                            <source src="Audios/Presentacion audio.mp4" type="audio/mpeg">
+                            <source src="Audios/Presentacion audio.mp4" type="audio/mp4">
                         </audio>
                     </div>
                 </div>
@@ -197,7 +238,7 @@
             </section>
 
             <!-- 07 SKETCH -->
-            <section class="doc-section" id="scketch">
+            <section class="doc-section" id="sketch">
                 <div class="section-header">
                     <span class="section-number">07</span>
                     <div class="section-title-wrap">
@@ -275,7 +316,7 @@
                             <span>Portafolio Web Multimedia</span>
                         </div>
                     </div>
-                   <div class="image-wrapper">
+                    <div class="image-wrapper">
                         <img src="Archivos/qr web.png" alt="Web Portafolio Multimedia" class="centered-media">
                     </div>
                 </div>
@@ -290,25 +331,48 @@
 
         </main>
 
-    </div><!-- /.three-col-layout -->
+    </div><!-- /.two-col-layout -->
 
+    <!-- LÓGICA DE INTERACCIÓN -->
     <script>
+        const cyberGlobalBg = document.getElementById('cyberGlobalBg');
+
+        if (cyberGlobalBg) {
+            window.addEventListener('mousemove', (e) => {
+                const rect = cyberGlobalBg.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const percentX = (x / rect.width) * 100;
+                const percentY = (y / rect.height) * 100;
+                
+                const rotateX = ((y - centerY) / centerY) * -5;
+                const rotateY = ((x - centerX) / centerX) * 5;
+
+                cyberGlobalBg.style.setProperty('--mouse-x', `${percentX}%`);
+                cyberGlobalBg.style.setProperty('--mouse-y', `${percentY}%`);
+                cyberGlobalBg.style.setProperty('--rx', `${rotateX}deg`);
+                cyberGlobalBg.style.setProperty('--ry', `${rotateY}deg`);
+            });
+        }
+
         const sections = document.querySelectorAll('section[id]');
         const indexItems = document.querySelectorAll('.index-item');
-        const indexListContainer = document.querySelector('.index-list');
+        const colSticky = document.querySelector('.col-sticky');
         let isClickScrolling = false;
 
-        // EFECTO PARALLAX DE FONDO NEÓN AL HACER SCROLL
-        window.addEventListener('scroll', () => {
-            const scrollPos = window.scrollY;
-            document.documentElement.style.setProperty('--scroll-offset', `${scrollPos}px`);
-        });
-
-        // 1. Manejo directo del clic en las pestañas del índice
         indexItems.forEach(item => {
             item.addEventListener('click', (e) => {
                 e.preventDefault();
                 isClickScrolling = true;
+
+                item.classList.add('cyber-click-trigger');
+                setTimeout(() => {
+                    item.classList.remove('cyber-click-trigger');
+                }, 400);
 
                 const targetId = item.getAttribute('href');
                 const targetSection = document.querySelector(targetId);
@@ -319,10 +383,6 @@
 
                     targetSection.scrollIntoView({ behavior: 'smooth' });
 
-                    if (window.innerWidth <= 1024) {
-                        scrollNavContainer(item);
-                    }
-
                     setTimeout(() => {
                         isClickScrolling = false;
                     }, 800);
@@ -330,18 +390,6 @@
             });
         });
 
-        function scrollNavContainer(activeItem) {
-            const containerWidth = indexListContainer.clientWidth;
-            const itemLeft = activeItem.offsetLeft;
-            const itemWidth = activeItem.clientWidth;
-            
-            indexListContainer.scrollTo({
-                left: itemLeft - (containerWidth / 2) + (itemWidth / 2),
-                behavior: 'smooth'
-            });
-        }
-
-        // 2. Observer de scroll
         const observerOptions = {
             root: null,
             rootMargin: '-20% 0px -55% 0px',
@@ -356,10 +404,13 @@
                     const id = entry.target.id;
                     indexItems.forEach(item => {
                         const isCurrent = item.getAttribute('data-section') === id;
-                        item.classList.toggle('active', isCurrent);
-                        
-                        if (isCurrent && window.innerWidth <= 1024) {
-                            scrollNavContainer(item);
+                        if (isCurrent && !item.classList.contains('active')) {
+                            indexItems.forEach(i => i.classList.remove('active'));
+                            item.classList.add('active');
+                            
+                            if (colSticky) {
+                                item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                            }
                         }
                     });
                 }
@@ -368,7 +419,6 @@
 
         sections.forEach(s => observer.observe(s));
 
-        // 3. Fade-in progresivo
         const fadeObs = new IntersectionObserver((entries) => {
             entries.forEach(e => { 
                 if (e.isIntersecting) e.target.classList.add('visible'); 
@@ -376,6 +426,32 @@
         }, { threshold: 0.05 });
 
         document.querySelectorAll('.doc-section').forEach(el => fadeObs.observe(el));
+
+        // EFECTO GLITCH ALEATORIO EN EL TÍTULO Y SECCIONES
+        document.addEventListener("DOMContentLoaded", () => {
+            const glitchTargets = document.querySelectorAll('.section-title, .brand-title');
+
+            glitchTargets.forEach(title => {
+                title.classList.add('glitch-title');
+                title.setAttribute('data-text', title.innerText.trim());
+            });
+
+            function triggerRandomGlitch() {
+                if (glitchTargets.length === 0) return;
+                
+                const randomTitle = glitchTargets[Math.floor(Math.random() * glitchTargets.length)];
+                randomTitle.classList.add('glitching');
+                
+                setTimeout(() => {
+                    randomTitle.classList.remove('glitching');
+                }, 350);
+
+                const nextInterval = Math.floor(Math.random() * 3500) + 2500;
+                setTimeout(triggerRandomGlitch, nextInterval);
+            }
+
+            setTimeout(triggerRandomGlitch, 2000);
+        });
     </script>
 
 </body>
